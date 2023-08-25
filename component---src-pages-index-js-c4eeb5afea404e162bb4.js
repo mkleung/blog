@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[678],{6558:function(e,l,t){t.r(l),t.d(l,{Head:function(){return a}});var n=t(7294);l.default=()=>n.createElement("main",null,n.createElement("h1",{className:"text-3xl font-bold underline"},"Hello world!"));const a=()=>n.createElement("title",null,"Home Page")}}]);
+//# sourceMappingURL=component---src-pages-index-js-c4eeb5afea404e162bb4.js.map
