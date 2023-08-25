@@ -1,7 +1,9 @@
 # Create gatspy site
 
 npm init gatsby
+
 cd my-gatsby-site
+
 npm run develop
 
 # Deploy to github pages
