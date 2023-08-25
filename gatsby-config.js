@@ -6,5 +6,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: `https://www.mikeleung.ca`,
   },
-  plugins: [],
+  plugins: [
+    'gatsby-plugin-postcss',
+  ],
 }
