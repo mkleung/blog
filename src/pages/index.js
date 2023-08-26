@@ -21,7 +21,7 @@ const IndexPage = () => {
     <div className="container mx-auto py-8">
       <div className="mx-auto max-w-sm ">
 
-        <StaticImage src="../images/mike.jpg" 
+        <StaticImage src="../images/mike.JPG"   placeholder="blurred"
       layout="fixed"
       
       height={100}
