@@ -24,10 +24,10 @@ const IndexPage = () => {
     <div className="container mx-auto py-8">
       <div className="mx-auto max-w-sm ">
 
-        {/* <StaticImage src="../images/mike.JPG"   placeholder="blurred"
+      <StaticImage src="../images/mike.JPG"   placeholder="blurred"
       layout="fixed"
       height={100}
-      className="mx-auto rounded-full mb-5" alt="developer" /> */}
+      className="mx-auto rounded-full mb-5" alt="developer" />
 
     <img src={ withPrefix(HeadShotPlaceHolder) } className = "mx-auto rounded-full mb-5 h-20" alt="web developer" />
 

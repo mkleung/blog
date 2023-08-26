@@ -1,4 +1,4 @@
-# Create gatspy site
+# Create gatsby site
 
 npm init gatsby
 
