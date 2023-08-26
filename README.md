@@ -17,4 +17,4 @@ npm run deploy
 # Packages to install
 
 - CSS [Tailwind](https://tailwindcss.com/docs/guides/gatsby)
-- Gatsby Image
+- Gatsby Image (NOTE: use photo.JPG - capitalize the JPG or will not show up on github pages)

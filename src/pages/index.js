@@ -2,6 +2,9 @@ import * as React from "react"
 import '../styles/global.css'
 
 import { StaticImage } from "gatsby-plugin-image"
+import { withPrefix } from 'gatsby'
+import HeadShotPlaceHolder from '../images/mike.jpg'
+
 
 const IndexPage = () => {
   return (
@@ -21,11 +24,13 @@ const IndexPage = () => {
     <div className="container mx-auto py-8">
       <div className="mx-auto max-w-sm ">
 
-        <StaticImage src="../images/mike.JPG"   placeholder="blurred"
+        {/* <StaticImage src="../images/mike.JPG"   placeholder="blurred"
       layout="fixed"
-      
       height={100}
-      className="mx-auto rounded-full mb-5" alt="developer" />
+      className="mx-auto rounded-full mb-5" alt="developer" /> */}
+
+    <img src={ withPrefix(HeadShotPlaceHolder) } className = "mx-auto rounded-full mb-5 h-20" alt="web developer" />
+
 
         {/* <h1 className="text-3xl font-bold text-center">Example Developer</h1> */}
         <div className="text-center">
