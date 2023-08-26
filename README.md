@@ -14,7 +14,7 @@ Inside package.json, add inside scripts
 
 npm run deploy
 
-### Install Tailwindcss
+# Packages to install
 
-https://tailwindcss.com/docs/guides/gatsby
-
+- CSS [Tailwind](https://tailwindcss.com/docs/guides/gatsby)
+- Gatsby Image

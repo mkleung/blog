@@ -1,6 +1,7 @@
 import * as React from "react"
 import '../styles/global.css'
-import profileImg from "../images/mike.jpeg"
+
+import { StaticImage } from "gatsby-plugin-image"
 
 const IndexPage = () => {
   return (
@@ -19,8 +20,13 @@ const IndexPage = () => {
 
     <div className="container mx-auto py-8">
       <div className="mx-auto max-w-sm ">
-        <img 
-        src={profileImg} alt="Developer Photo" class="mx-auto h-20 rounded-full" />
+
+        <StaticImage src="../images/mike.jpg"   placeholder="blurred"
+      layout="fixed"
+      
+      height={100}
+      className="mx-auto rounded-full mb-5" alt="developer" />
+
         {/* <h1 className="text-3xl font-bold text-center">Example Developer</h1> */}
         <div className="text-center">
           <a href="https://mikeleung.ca" class="text-teal-500 hover:text-teal-800 mx-2">Website</a>
