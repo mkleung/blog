@@ -29,7 +29,7 @@ const IndexPage = () => {
       height={100}
       className="mx-auto rounded-full mb-5" alt="developer" />
 
-    <img src={ withPrefix(HeadShotPlaceHolder) } className = "mx-auto rounded-full mb-5 h-20" alt="web developer" />
+    {/* <img src={ withPrefix(HeadShotPlaceHolder) } className = "mx-auto rounded-full mb-5 h-20" alt="web developer" /> */}
 
 
         {/* <h1 className="text-3xl font-bold text-center">Example Developer</h1> */}
