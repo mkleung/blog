@@ -1,0 +1,32 @@
+html, body, h1, h2, h3, p {
+    font-family: "Open Sans";
+
+  }
+
+  .dark {
+    background-color: #111827;
+  }
+  
+  .dark p, 
+  .dark h1, 
+  .dark h2,
+  .dark h3,
+  .dark span,
+  .dark label {
+    color:white;
+  }
+
+  
+  body.light {
+    --primary: white;
+    --text-main: #111827;
+  }
+
+
+  .dark .project {
+    background-color: rgb(45 212 191);
+  }
+
+  /* .dark .project .title {
+    background:#FFF;
+  } */

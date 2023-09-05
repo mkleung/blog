@@ -20,3 +20,4 @@ npm run deploy
 - Gatsby Image 
 (NOTE: use photo.JPG - capitalize the JPG or will not show up on github pages and use
 pathPrefix: "/", in gatsby-config.js)
+-  npm install gatsby-omni-font-loader react-helmet
