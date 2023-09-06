@@ -14,8 +14,8 @@ const BlogPage = () => {
 
       <Navbar />
 
-      <div className="container mx-auto py-8">
-        <div className="mx-auto max-w-xl ">
+      <div className="container max-w-2xl mx-auto py-8">
+     
 
           <Jumbotron />
 
@@ -23,7 +23,7 @@ const BlogPage = () => {
             This page is under construction
           </p>
         </div>
-      </div>
+
       <Footer />
     </main>
   )

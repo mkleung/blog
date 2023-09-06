@@ -16,8 +16,15 @@ npm run deploy
 
 # Packages to install
 
-- CSS [Tailwind](https://tailwindcss.com/docs/guides/gatsby)
-- Gatsby Image 
+TailwindCSS
+- [Tailwind](https://tailwindcss.com/docs/guides/gatsby)
+
+Gatsby Image 
 (NOTE: use photo.JPG - capitalize the JPG or will not show up on github pages and use
 pathPrefix: "/", in gatsby-config.js)
+
+Font loader
 -  npm install gatsby-omni-font-loader react-helmet
+
+Dark mode
+-  npm i gatsby-plugin-dark-mode --legacy-peer-deps

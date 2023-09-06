@@ -1,12 +1,13 @@
 import * as React from "react"
 import '../styles/global.css'
 import '../styles/custom.css'
-
 import { StaticImage } from "gatsby-plugin-image"
 
 import Navbar from "../components/navbar"
 import Jumbotron from "../components/jumbotron"
 import Footer from "../components/footer"
+
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 const IndexPage = () => {
   return (
@@ -14,40 +15,129 @@ const IndexPage = () => {
 
       <Navbar />
 
-      <div className="container mx-auto py-8">
-        <div className="mx-auto max-w-xl	 ">
-
-          <Jumbotron />
-          
-          <h1 className="font-bold	test">About me</h1>
-          <p className="py-4 text-gray-700">
-            Hello I am Michael Leung. I'm a software developer based in Ottawa, Canada. This ia a place where 
-            I share my projects, hobbies, learnings and thoughts to the world. 
+      <div className="container max-w-2xl mx-auto  grid grid-cols-3 gap-4 mt-28">
+        <div className="col-span-2	 ">
+          <h1 className="mainTitle">Hello 👋 I'm Michael</h1>
+          <h2 className="mt-2">Welcome to my internet island 🏝️</h2>
+          <p className="py-4 text-gray-700 mt-10">
+            I'm a software developer that moulds ideas into useful products. Based in Ottawa, I specialize in programming <span className="highlight">amazing websites</span>.
           </p>
-
-          <h2 className="font-bold	">Random Facts</h2>
-          <p className="py-4 text-gray-700 px-5">
-            <ul className="list-disc">
-              <li>I have a bachelors degree in science from Carleton University</li>
-              <li>I was born and grew up on a tiny island near Africa called Mauritius</li>
-              <li>My pastime since I was a teenager was watching bollywood movies and my favorite movie of all time is RRR</li>
-            </ul>
-          </p>
-
-          <h2 className="font-bold	">Favorites</h2>
-          <p className="py-4 text-gray-700 px-5">
-            <ul className="list-disc">
-              <li>Ice-cream: Coconut</li>
-              <li>Dish     : Biryani</li>
-              <li>Sport   : Soccer</li>
-            </ul>
-          </p>
-
+        </div>
+        <div className="	 ">
+          <StaticImage src="../images/mike.JPG" placeholder="blurred"
+            layout="fixed"
+            height={100}
+            className="mx-auto rounded-full mt-5" alt="developer" />
         </div>
       </div>
 
+      <div className="container max-w-2xl mx-auto mt-20">
+        <h2>Things I am familiar with</h2>
+      </div>
+
+      <div className="container max-w-2xl mx-auto py-5 skills grid grid-cols-2 gap-8">
+        <div>
+          <h2 className="font-bold	text-center	">Front End</h2>
+
+          <div class="mb-1 text-lg font-medium dark:text-white">HTML</div>
+          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+            <div className="htmlbar bg-teal-300 h-4 rounded-full"></div>
+          </div>
+
+          <div class="mb-1 text-lg font-medium dark:text-white">CSS / Bootstrap / Tailwind</div>
+          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+            <div className="cssbar bg-teal-300 h-4 rounded-full"></div>
+          </div>
+
+          <div class="mb-1 text-lg font-medium dark:text-white">Javascript / ReactJS</div>
+          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+            <div className="javascriptbar bg-teal-300 h-4 rounded-full"></div>
+          </div>
+
+        </div>
+
+        <div>
+          <h2 className="font-bold	text-center	">Back End</h2>
+          <div class="mb-1 text-lg font-medium dark:text-white">PHP / WordPress / Laravel</div>
+          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+            <div className="phpbar bg-teal-300 h-4 rounded-full"></div>
+          </div>
+
+          <div class="mb-1 text-lg font-medium dark:text-white">Python/Flask</div>
+          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+            <div className="pythonbar bg-teal-300 h-4 rounded-full"></div>
+          </div>
+
+          <div class="mb-1 text-lg font-medium dark:text-white">NodeJs</div>
+          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+            <div className="nodebar bg-teal-300 h-4 rounded-full"></div>
+          </div>
+        </div>
+
+        <div>
+          <h2 className="font-bold	text-center	">Databases</h2>
+          <div class="mb-1 text-lg font-medium dark:text-white">MySQL</div>
+          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+            <div className="mysqlbar bg-teal-300 h-4 rounded-full"></div>
+          </div>
+
+          <div class="mb-1 text-lg font-medium dark:text-white">MongoDB</div>
+          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+            <div className="mongobar bg-teal-300 h-4 rounded-full"></div>
+          </div>
+
+          <div class="mb-1 text-lg font-medium dark:text-white">SQLite</div>
+          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+            <div className="sqlitebar bg-teal-300 h-4 rounded-full"></div>
+          </div>
+        </div>
+
+        <div>
+          <h2 className="font-bold	text-center	">Mobile</h2>
+
+          <div class="mb-1 text-lg font-medium dark:text-white">Android</div>
+          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+            <div className="androidbar bg-teal-300 h-4 rounded-full"></div>
+          </div>
+
+          <div class="mb-1 text-lg font-medium dark:text-white">IOS</div>
+          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+            <div className="iosbar bg-teal-300 h-4 rounded-full"></div>
+          </div>
+
+          <div class="mb-1 text-lg font-medium dark:text-white">React Native</div>
+          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+            <div className="reactbar bg-teal-300 h-4 rounded-full"></div>
+          </div>
+        </div>
+
+
+
+        <div>
+          <h2 className="font-bold	text-center	">Data Science</h2>
+
+          <div class="mb-1 text-lg font-medium dark:text-white">R</div>
+          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+            <div className="rbar bg-teal-300 h-4 rounded-full"></div>
+          </div>
+
+          <div class="mb-1 text-lg font-medium dark:text-white">SAS</div>
+          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+            <div className="sasbar bg-teal-300 h-4 rounded-full"></div>
+          </div>
+
+          <div class="mb-1 text-lg font-medium dark:text-white">Tableau</div>
+          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+            <div className="tableaubar bg-teal-300 h-4 rounded-full"></div>
+          </div>
+        
+        </div>
+
+      </div>
+
+
       <Footer />
-    </main>
+    </main >
   )
 }
 
