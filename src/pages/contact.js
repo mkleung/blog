@@ -2,8 +2,6 @@ import * as React from "react"
 import '../styles/global.css'
 import '../styles/custom.css'
 
-
-import { StaticImage } from "gatsby-plugin-image"
 import Navbar from "../components/navbar"
 import Jumbotron from "../components/jumbotron"
 import Footer from "../components/footer"

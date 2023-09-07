@@ -4,10 +4,9 @@ import '../styles/custom.css'
 import { StaticImage } from "gatsby-plugin-image"
 
 import Navbar from "../components/navbar"
-import Jumbotron from "../components/jumbotron"
 import Footer from "../components/footer"
 
-import { ThemeToggler } from 'gatsby-plugin-dark-mode'
+// import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 const IndexPage = () => {
   return (
@@ -39,18 +38,18 @@ const IndexPage = () => {
         <div>
           <h2 className="font-bold	text-center	">Front End</h2>
 
-          <div class="mb-1 text-lg font-medium dark:text-white">HTML</div>
-          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">HTML</p>
+          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700 mb-1 ">
             <div className="htmlbar bg-teal-300 h-4 rounded-full"></div>
           </div>
 
-          <div class="mb-1 text-lg font-medium dark:text-white">CSS / Bootstrap / Tailwind</div>
-          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">CSS / Bootstrap / Tailwind</p>
+          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700 mb-1 ">
             <div className="cssbar bg-teal-300 h-4 rounded-full"></div>
           </div>
 
-          <div class="mb-1 text-lg font-medium dark:text-white">Javascript / ReactJS</div>
-          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">Javascript / ReactJS</p>
+          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700 mb-1 ">
             <div className="javascriptbar bg-teal-300 h-4 rounded-full"></div>
           </div>
 
@@ -58,17 +57,17 @@ const IndexPage = () => {
 
         <div>
           <h2 className="font-bold	text-center	">Back End</h2>
-          <div class="mb-1 text-lg font-medium dark:text-white">PHP / WordPress / Laravel</div>
+          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">PHP / WordPress / Laravel</p>
           <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
             <div className="phpbar bg-teal-300 h-4 rounded-full"></div>
           </div>
 
-          <div class="mb-1 text-lg font-medium dark:text-white">Python/Flask</div>
+          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">Python/Flask</p>
           <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
             <div className="pythonbar bg-teal-300 h-4 rounded-full"></div>
           </div>
 
-          <div class="mb-1 text-lg font-medium dark:text-white">NodeJs</div>
+          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">NodeJs</p>
           <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
             <div className="nodebar bg-teal-300 h-4 rounded-full"></div>
           </div>
@@ -76,17 +75,17 @@ const IndexPage = () => {
 
         <div>
           <h2 className="font-bold	text-center	">Databases</h2>
-          <div class="mb-1 text-lg font-medium dark:text-white">MySQL</div>
+          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">MySQL</p>
           <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
             <div className="mysqlbar bg-teal-300 h-4 rounded-full"></div>
           </div>
 
-          <div class="mb-1 text-lg font-medium dark:text-white">MongoDB</div>
+          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">MongoDB</p>
           <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
             <div className="mongobar bg-teal-300 h-4 rounded-full"></div>
           </div>
 
-          <div class="mb-1 text-lg font-medium dark:text-white">SQLite</div>
+          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">SQLite</p>
           <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
             <div className="sqlitebar bg-teal-300 h-4 rounded-full"></div>
           </div>
@@ -95,17 +94,17 @@ const IndexPage = () => {
         <div>
           <h2 className="font-bold	text-center	">Mobile</h2>
 
-          <div class="mb-1 text-lg font-medium dark:text-white">Android</div>
+          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">Android</p>
           <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
             <div className="androidbar bg-teal-300 h-4 rounded-full"></div>
           </div>
 
-          <div class="mb-1 text-lg font-medium dark:text-white">IOS</div>
+          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">IOS</p>
           <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
             <div className="iosbar bg-teal-300 h-4 rounded-full"></div>
           </div>
 
-          <div class="mb-1 text-lg font-medium dark:text-white">React Native</div>
+          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">React Native</p>
           <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
             <div className="reactbar bg-teal-300 h-4 rounded-full"></div>
           </div>
@@ -116,17 +115,17 @@ const IndexPage = () => {
         <div>
           <h2 className="font-bold	text-center	">Data Science</h2>
 
-          <div class="mb-1 text-lg font-medium dark:text-white">R</div>
+          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">R</p>
           <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
             <div className="rbar bg-teal-300 h-4 rounded-full"></div>
           </div>
 
-          <div class="mb-1 text-lg font-medium dark:text-white">SAS</div>
+          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">SAS</p>
           <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
             <div className="sasbar bg-teal-300 h-4 rounded-full"></div>
           </div>
 
-          <div class="mb-1 text-lg font-medium dark:text-white">Tableau</div>
+          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">Tableau</p>
           <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
             <div className="tableaubar bg-teal-300 h-4 rounded-full"></div>
           </div>

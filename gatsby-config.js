@@ -11,7 +11,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, 
-    'gatsby-plugin-dark-mode',
+    // 'gatsby-plugin-dark-mode',
     {
       resolve: `gatsby-omni-font-loader`,
       options: {
@@ -20,7 +20,7 @@ module.exports = {
         web: [
           {
             name: `Poppins`,
-            file:  `https://fonts.googleapis.com/css2?family=Inter:wght@600;700;900&display=swap`,
+            file:  `https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap`,
           },
         ],
       },

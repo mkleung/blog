@@ -17,8 +17,12 @@ h3 {
   font-size: 1rem;
 }
 
+p {
+  font-weight: 400;
+}
 
-.dark {
+
+/* .dark {
   background-color: #111827;
 }
 
@@ -29,7 +33,7 @@ h3 {
 .dark span,
 .dark label {
   color: white;
-}
+} */
 
 
 body.light {
@@ -59,6 +63,11 @@ body.light {
 .highlight {
   white-space: nowrap;
   background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 50%, #b2f5ea 0);
+}
+
+.dark .highlight {
+  white-space: nowrap;
+  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 50%, #f39c12 0);
 }
 
 .skills .htmlbar {

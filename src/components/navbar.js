@@ -1,7 +1,7 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
-import { ThemeToggler } from 'gatsby-plugin-dark-mode'
+// import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 
 function Navbar() {
@@ -28,7 +28,7 @@ function Navbar() {
           <a href="/contact" className="block px-3 py-2 rounded-lg text-teal-500 hover:bg-teal-400 hover:text-white">Contact</a>
           
           <div className="darkToggle mt-1">
-            <ThemeToggler>
+            {/* <ThemeToggler>
               {({ theme, toggleTheme }) => (
                 <label >
                   <input
@@ -41,7 +41,7 @@ function Navbar() {
 
                 </label>
               )}
-            </ThemeToggler>
+            </ThemeToggler> */}
 
 
             {/* {isDark ? 

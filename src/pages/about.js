@@ -18,7 +18,7 @@ const AboutPage = () => {
           
           <h1 className="font-bold	test">About me</h1>
           <p className="py-4 text-gray-700">
-            Hello I am Michael Leung. I'm a software developer based in Ottawa, Canada. This ia a place where 
+            Hello I am Michael Leung. I'm a software developer based in Ottawa, Canada. This is a place where 
             I share my projects, hobbies, learnings and thoughts to the world. 
           </p>
 
