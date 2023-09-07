@@ -11,7 +11,7 @@ module.exports = {
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`, 
-    // 'gatsby-plugin-dark-mode',
+    'gatsby-plugin-dark-mode',
     {
       resolve: `gatsby-omni-font-loader`,
       options: {

@@ -9,20 +9,21 @@ p {
 
 h2 {
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 
 h3 {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 p {
   font-weight: 400;
+  font-size: 1.2rem;
 }
 
 
-/* .dark {
+.dark {
   background-color: #111827;
 }
 
@@ -33,7 +34,7 @@ p {
 .dark span,
 .dark label {
   color: white;
-} */
+}
 
 
 body.light {
@@ -70,62 +71,18 @@ body.light {
   background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 50%, #f39c12 0);
 }
 
-.skills .htmlbar {
-  width: 90%;
-}
+.frontend .firstbar { width: 90%; }
+.frontend .secondbar { width: 90%; }
+.frontend .thirdbar { width: 70%; }
 
-.skills .cssbar {
-  width: 80%;
-}
+.backend .firstbar { width: 90%; }
+.backend .secondbar { width: 90%; }
+.backend .thirdbar { width: 70%; }
 
-.skills .javascriptbar {
-  width: 70%;
-}
+.datascience .firstbar { width: 90%; }
+.datascience .secondbar { width: 50%; }
+.datascience .thirdbar { width: 40%; }
 
-.skills .phpbar {
-  width: 90%;
-}
-
-.skills .pythonbar {
-  width: 80%;
-}
-
-.skills .nodebar {
-  width: 50%;
-}
-
-.skills .mongobar {
-  width: 60%;
-}
-
-.skills .mysqlbar {
-  width: 90%;
-}
-
-.skills .sqlitebar {
-  width: 80%;
-}
-
-.skills .iosbar {
-  width: 70%;
-}
-
-.skills .androidbar {
-  width: 80%;
-}
-
-.skills .reactbar {
-  width: 60%;
-}
-
-.skills .rbar {
-  width: 70%;
-}
-
-.skills .sasbar {
-  width: 60%;
-}
-
-.skills .tableaubar {
-  width: 40%;
-}
+.other .firstbar { width: 80%; }
+.other .secondbar { width: 60%; }
+.other .thirdbar { width: 40%; }

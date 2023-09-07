@@ -35,106 +35,75 @@ const IndexPage = () => {
       </div>
 
       <div className="container max-w-2xl mx-auto py-5 skills grid grid-cols-2 gap-8">
-        <div>
+        
+        <div className="frontend">
           <h2 className="font-bold	text-center	">Front End</h2>
-
           <p class="mb-1 mt-1 text-lg font-medium dark:text-white">HTML</p>
           <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700 mb-1 ">
-            <div className="htmlbar bg-teal-300 h-4 rounded-full"></div>
+            <div className="firstbar bg-teal-300 h-4 rounded-full"></div>
           </div>
-
           <p class="mb-1 mt-1 text-lg font-medium dark:text-white">CSS / Bootstrap / Tailwind</p>
           <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700 mb-1 ">
-            <div className="cssbar bg-teal-300 h-4 rounded-full"></div>
+            <div className="secondbar bg-teal-300 h-4 rounded-full"></div>
           </div>
-
           <p class="mb-1 mt-1 text-lg font-medium dark:text-white">Javascript / ReactJS</p>
           <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700 mb-1 ">
-            <div className="javascriptbar bg-teal-300 h-4 rounded-full"></div>
+            <div className="thirdbar bg-teal-300 h-4 rounded-full"></div>
           </div>
-
         </div>
 
-        <div>
+        <div className= "backend">
           <h2 className="font-bold	text-center	">Back End</h2>
-          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">PHP / WordPress / Laravel</p>
+          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">PHP / Laravel</p>
           <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
-            <div className="phpbar bg-teal-300 h-4 rounded-full"></div>
+            <div className="firstbar bg-teal-300 h-4 rounded-full"></div>
           </div>
-
-          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">Python/Flask</p>
+          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">Wordpress / LAMP</p>
           <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
-            <div className="pythonbar bg-teal-300 h-4 rounded-full"></div>
+            <div className="secondbar bg-teal-300 h-4 rounded-full"></div>
           </div>
-
-          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">NodeJs</p>
+          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">Python / Flask / Django</p>
           <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
-            <div className="nodebar bg-teal-300 h-4 rounded-full"></div>
-          </div>
-        </div>
-
-        <div>
-          <h2 className="font-bold	text-center	">Databases</h2>
-          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">MySQL</p>
-          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
-            <div className="mysqlbar bg-teal-300 h-4 rounded-full"></div>
-          </div>
-
-          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">MongoDB</p>
-          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
-            <div className="mongobar bg-teal-300 h-4 rounded-full"></div>
-          </div>
-
-          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">SQLite</p>
-          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
-            <div className="sqlitebar bg-teal-300 h-4 rounded-full"></div>
-          </div>
-        </div>
-
-        <div>
-          <h2 className="font-bold	text-center	">Mobile</h2>
-
-          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">Android</p>
-          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
-            <div className="androidbar bg-teal-300 h-4 rounded-full"></div>
-          </div>
-
-          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">IOS</p>
-          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
-            <div className="iosbar bg-teal-300 h-4 rounded-full"></div>
-          </div>
-
-          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">React Native</p>
-          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
-            <div className="reactbar bg-teal-300 h-4 rounded-full"></div>
+            <div className="thirdbar bg-teal-300 h-4 rounded-full"></div>
           </div>
         </div>
 
 
-
-        <div>
-          <h2 className="font-bold	text-center	">Data Science</h2>
-
-          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">R</p>
+        <div className="datascience">
+          <h2 className="font-bold	text-center	">Database and Datascience</h2>
+          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">Mysql / PosgreSQL</p>
           <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
-            <div className="rbar bg-teal-300 h-4 rounded-full"></div>
+            <div className="firstbar bg-teal-300 h-4 rounded-full"></div>
           </div>
 
-          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">SAS</p>
+          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">SAS / R</p>
           <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
-            <div className="sasbar bg-teal-300 h-4 rounded-full"></div>
+            <div className="secondbar bg-teal-300 h-4 rounded-full"></div>
           </div>
 
-          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">Tableau</p>
+          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">Nosql</p>
           <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
-            <div className="tableaubar bg-teal-300 h-4 rounded-full"></div>
+            <div className="thirdbar bg-teal-300 h-4 rounded-full"></div>
           </div>
-        
         </div>
 
+        {/* Other */}
+        <div className="other">
+          <h2 className="font-bold	text-center	">Other</h2>
+          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">Photoshop / Illustrator</p>
+          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+            <div className="firstbar bg-teal-300 h-4 rounded-full"></div>
+          </div>
+          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">Git</p>
+          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+            <div className="secondbar bg-teal-300 h-4 rounded-full"></div>
+          </div>
+          <p class="mb-1 mt-1 text-lg font-medium dark:text-white">Vagrant / Docker / Virtualbox</p>
+          <div className="w-full bg-gray-200 rounded-full h-4 dark:bg-gray-700">
+            <div className="thirdbar bg-teal-300 h-4 rounded-full"></div>
+          </div>
+        </div>
       </div>
-
-
       <Footer />
     </main >
   )

@@ -7,7 +7,7 @@ function Jumbotron() {
 
             <StaticImage src="../images/mike.JPG" placeholder="blurred"
                 layout="fixed"
-                height={50}
+                height={40}
                 className="mx-auto rounded-full mb-5" alt="developer" />
 
             <div className="text-center">
