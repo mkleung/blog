@@ -11,7 +11,7 @@ import Header from "./Header"
 
 import '../styles/global.css'
 import '../styles/custom.css'
-import '../styles/switch.css'
+
 
 const Layout = ({  children }) => {
     return (

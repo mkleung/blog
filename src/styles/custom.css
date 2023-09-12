@@ -33,7 +33,7 @@ p {
 .dark h3,
 .dark span,
 .dark label,
-.dark ul li a:not(.active) {
+.dark a {
   color: white;
 }
 
@@ -54,12 +54,16 @@ body.light {
 }
 
 
+/* .dark .navbar a:not(.active) {
+  color:#fff;
+} */
+
 .mainTitle {
   font-weight: 900;
   font-size: 2.5rem;
 }
-.active {
-  color:  rgb(59 130 246);
+.navbar .active {
+  color:  rgb(20, 184, 166);
 }
 
 .highlight {
@@ -74,7 +78,7 @@ body.light {
 
 .darkCheckContainer{
   margin-left: 0.5rem!important;
-  padding-right: 2rem!important;
+  padding-right: 1rem!important;
 }
 
 #darkCheck {
@@ -89,6 +93,15 @@ body.light {
 #darkCheck:checked + label:after {
   content: "☀️";
   cursor:pointer;
+}
+
+
+.bar {
+  background-color: rgb(94 234 212);
+}
+
+.dark .bar {
+  background-color: #f39c12 ;
 }
 
 .frontend .firstbar { width: 90%; }
