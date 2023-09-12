@@ -11,11 +11,11 @@ function Jumbotron() {
                 className="mx-auto rounded-full mb-5" alt="developer" />
 
             <div className="text-center">
-                <a href="https://mikeleung.ca" class="text-teal-500 hover:text-teal-800 mx-2">Website</a>
-                <a href="https://twitter.com/" class="text-teal-500 hover:text-teal-800 mx-2">Twitter</a>
-                <a href="https://github.com/mkleung" class="text-teal-500 hover:text-teal-800 mx-2">Github</a>
+                <a target="_blank" href="https://github.com/mkleung" className="text-teal-500 hover:text-blue-500 mx-2">Github</a>
+                <a target="_blank" href="https://www.instagram.com/morningmike/" className="text-teal-500 hover:text-blue-500 mx-2">Instagram</a>
+                <a target="_blank" href="https://twitter.com/mikelottawa" className="text-teal-500 hover:text-blue-500 mx-2">Twitter</a>
             </div>
-            <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"></hr>
+            <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"></hr>
         </div>
     )
 }

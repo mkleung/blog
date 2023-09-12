@@ -25,5 +25,22 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-plugin-favicons',
+      options: {
+        logo: './src/images/favicon.ico',
+        appName: 'My Website',
+        background: '#fff',
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          yandex: false,
+          windows: false
+        }
+      }
+    }
   ],
 }

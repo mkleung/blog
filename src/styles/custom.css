@@ -19,7 +19,7 @@ h3 {
 
 p {
   font-weight: 400;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 
@@ -32,7 +32,8 @@ p {
 .dark h2,
 .dark h3,
 .dark span,
-.dark label {
+.dark label,
+.dark ul li a:not(.active) {
   color: white;
 }
 
@@ -44,21 +45,21 @@ body.light {
 
 
 .dark .project {
-  background-color: rgb(45 212 191);
+  /* background-color: rgb(45 212 191); */
+  background-color: #fff;
 }
 
-.moonToggle {
-  cursor: pointer;
+.dark .project p, .dark .project span  {
+  color: #111827;
 }
 
-.darkToggle input {
-  /* display: none; */
-  visibility: hidden;
-}
 
 .mainTitle {
   font-weight: 900;
   font-size: 2.5rem;
+}
+.active {
+  color:  rgb(59 130 246);
 }
 
 .highlight {
@@ -69,6 +70,25 @@ body.light {
 .dark .highlight {
   white-space: nowrap;
   background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 50%, #f39c12 0);
+}
+
+.darkCheckContainer{
+  margin-left: 0.5rem!important;
+  padding-right: 2rem!important;
+}
+
+#darkCheck {
+  visibility: hidden;
+}
+
+#darkCheck + label:after {
+  content: "🌙";
+  cursor:pointer;
+}
+
+#darkCheck:checked + label:after {
+  content: "☀️";
+  cursor:pointer;
 }
 
 .frontend .firstbar { width: 90%; }

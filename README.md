@@ -28,3 +28,6 @@ Font loader
 
 Dark mode
 -  npm i gatsby-plugin-dark-mode --legacy-peer-deps
+
+Favicon
+- npm install gatsby-plugin-favicons --legacy-peer-deps
