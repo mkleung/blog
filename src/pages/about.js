@@ -19,21 +19,32 @@ const AboutPage = () => {
           I share my projects, hobbies, learnings and thoughts to the world.
         </p>
 
-        <h2 className="font-bold	">Random Facts</h2>
+        <h2 className="font-bold	">Quick Facts</h2>
         <p className="py-4 text-gray-700 px-5">
           <ul className="list-disc">
             <li>I have a bachelors degree in science from Carleton University</li>
             <li>I was born and grew up on a tiny island south of India called Mauritius</li>
             <li>My pastime since I was a teenager was watching bollywood movies and my favorite movie of all time is RRR</li>
+            <li>I am obsessed with all things technology</li>
           </ul>
         </p>
 
         <h2 className="font-bold	">Favorites</h2>
         <p className="py-4 text-gray-700 px-5">
           <ul className="list-disc">
-            <li>Ice-cream: Coconut</li>
-            <li>Dish     : Biryani</li>
-            <li>Sport   : Soccer</li>
+            <li>Ice-cream: Coconut </li>
+            <li>Dish     : Biryani 🍛</li>
+            <li>Sport   : Soccer </li>
+            <li>Game     : Stardew Valley</li>
+          </ul>
+        </p>
+
+        <h2 className="font-bold	">Bucketlist</h2>
+        <p className="py-4 text-gray-700 px-5">
+          <ul className="list-disc">
+            <li>Bikepacking and camping in the wilderness</li>
+            <li>See the northern lights</li>
+            <li>Visit India's golden triangle cities (Agra, Jaipur and Dehli) and the Taj Mahal</li>
           </ul>
         </p>
 

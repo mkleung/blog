@@ -7,10 +7,10 @@ import Jumbotron from "../components/jumbotron"
 const ProjectsPage = () => {
   return (
     <Layout>
-      <div className="container max-w-2xl mx-auto py-8">
+      <div className="container max-w-2xl mx-auto p-4 py-8">
         <Jumbotron />
 
-        <div className="container m-auto grid grid-cols-2 gap-2">
+        <div className="container m-auto grid grid-cols-1 md:grid-cols-2 gap-4">
 
           <div className="max-w-sm rounded overflow-hidden shadow-lg project">
             {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"> */}

@@ -10,8 +10,7 @@ module.exports = {
     'gatsby-plugin-postcss',
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`, 
-    'gatsby-plugin-dark-mode',
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-omni-font-loader`,
       options: {

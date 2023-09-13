@@ -28,4 +28,21 @@ Font loader
 
 Dark mode
 -  npm i gatsby-plugin-dark-mode --legacy-peer-deps
+or
+
+downgrade react
+
+"dependencies": {
+   ...
+   "react": "16.14.0",
+    "react-dom": "16.14.0",
+    ...
+    }
+
+Favicon
+npm install gatsby-plugin-manifest
+
+
+Cleanup
+npm cache clean --force
 
