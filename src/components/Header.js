@@ -1,12 +1,29 @@
 import * as React from "react"
 import { useState } from "react"
 import { Link } from "gatsby"
-// import { ThemeToggler } from 'gatsby-plugin-dark-mode'
+import Sun from "../images/sun.png"
+import Moon from "../images/moon.png"
 
-const Header2 = ({ siteTitle, navLocation }) => {
+function getDefaultTheme() {
+    const savedTheme = window.localStorage.getItem("theme")
+    return savedTheme ? savedTheme : "light"
+}
+
+const Header = ({ siteTitle, navLocation }) => {
+
+    const [isDark, setIsDark] = React.useState(getDefaultTheme())
+
+    React.useEffect(() => {
+        if (isDark === "dark") {
+            document.body.classList.add("dark")
+        } else {
+            document.body.classList.remove("dark")
+        }
+        window.localStorage.setItem("theme", isDark)
+    }, [isDark])
 
     // https://codepen.io/leptr/pen/oNYORMm
-    
+
     const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 
     return (
@@ -62,20 +79,16 @@ const Header2 = ({ siteTitle, navLocation }) => {
                         <Link to="/contact" activeClassName="active" className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 ">Contact</Link>
                     </li>
                     <li className="darkCheckContainer">
-                            {/* <ThemeToggler>
-                                {({ theme, toggleTheme }) => (
-                                    <label >
-                                        <input
-                                            id="darkCheck"
-                                            type="checkbox"
-                                            onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
-                                            checked={theme === 'dark'}
-                                        />
-                                        <label for="darkCheck"></label>
-                                    </label>
+                        <div className="global-toggle-switch">
+                            <span onClick={() => setIsDark(isDark === "dark" ? "light" : "dark")}>
+                                {isDark === "dark" ? (
+                                    <img src={Sun} alt="sun img" />
+                                ) : (
+                                    <img src={Moon} alt="moon img" />
                                 )}
-                            </ThemeToggler> */}
-                        </li>
+                            </span>
+                        </div>
+                    </li>
                 </ul>
             </nav>
             <style>{`
@@ -101,4 +114,4 @@ const Header2 = ({ siteTitle, navLocation }) => {
     )
 }
 
-export default Header2
+export default Header

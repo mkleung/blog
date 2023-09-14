@@ -11,6 +11,9 @@ import Header from "./header"
 
 import '../styles/global.css'
 import '../styles/custom.css'
+import '../styles/dark.css'
+
+
 
 
 const Layout = ({  children }) => {

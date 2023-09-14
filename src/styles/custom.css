@@ -22,37 +22,6 @@ p {
   font-size: 1rem;
 }
 
-
-.dark {
-  background-color: #111827;
-}
-
-.dark p,
-.dark h1,
-.dark h2,
-.dark h3,
-.dark span,
-.dark label,
-.dark a {
-  color: white;
-}
-
-
-body.light {
-  --primary: white;
-  --text-main: #111827;
-}
-
-
-.dark .project {
-  /* background-color: rgb(45 212 191); */
-  background-color: #fff;
-}
-
-.dark .project p, .dark .project span  {
-  color: #111827;
-}
-
 .mainTitle {
   font-weight: 900;
   font-size: 2.5rem;
@@ -61,43 +30,22 @@ body.light {
   color:  rgb(20, 184, 166);
 }
 
+.global-toggle-switch {
+  cursor: pointer;
+}
+
 .highlight {
   white-space: nowrap;
   background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 50%, #b2f5ea 0);
 }
 
-.dark .highlight {
-  white-space: nowrap;
-  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 50%, #f39c12 0);
-}
-
-.darkCheckContainer{
-  margin-left: 0.5rem!important;
-  padding-right: 1rem!important;
-}
-
-#darkCheck {
-  visibility: hidden;
-}
-
-#darkCheck + label:after {
-  content: "🌙";
-  cursor:pointer;
-}
-
-#darkCheck:checked + label:after {
-  content: "☀️";
-  cursor:pointer;
-}
 
 
 .bar {
   background-color: rgb(94 234 212);
 }
 
-.dark .bar {
-  background-color: #f39c12 ;
-}
+
 
 .frontend .firstbar { width: 90%; }
 .frontend .secondbar { width: 90%; }

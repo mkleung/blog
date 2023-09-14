@@ -43,6 +43,10 @@ Favicon
 npm install gatsby-plugin-manifest
 
 
+Styled components
+
+npm install gatsby-plugin-styled-components styled-components babel-plugin-styled-components
+
 Cleanup
 npm cache clean --force
 
