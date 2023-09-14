@@ -10,7 +10,7 @@ function Footer() {
                     <div className="text-sm">
                    
 
-                        <p className="mb-5">Made using Gatsby </p>
+                        <p className="mb-5">Made using Gatsby and hosted on github</p>
                         <StaticImage src="../images/gatsby.PNG" placeholder="blurred"
                             layout="fixed"
                             height={20}
