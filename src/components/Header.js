@@ -1,28 +1,10 @@
 import * as React from "react"
 import { useState } from "react"
 import { Link } from "gatsby"
-import Sun from "../images/sun.png"
-import Moon from "../images/moon.png"
-
-function getDefaultTheme() {
-    const savedTheme = window.localStorage.getItem("theme")
-    return savedTheme ? savedTheme : "light"
-}
+import Dark from "./dark"
 
 const Header = ({ siteTitle, navLocation }) => {
 
-    const [isDark, setIsDark] = React.useState(getDefaultTheme())
-
-    React.useEffect(() => {
-        if (isDark === "dark") {
-            document.body.classList.add("dark")
-        } else {
-            document.body.classList.remove("dark")
-        }
-        window.localStorage.setItem("theme", isDark)
-    }, [isDark])
-
-    // https://codepen.io/leptr/pen/oNYORMm
 
     const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
 
@@ -79,15 +61,7 @@ const Header = ({ siteTitle, navLocation }) => {
                         <Link to="/contact" activeClassName="active" className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 ">Contact</Link>
                     </li>
                     <li className="darkCheckContainer">
-                        <div className="global-toggle-switch">
-                            <span onClick={() => setIsDark(isDark === "dark" ? "light" : "dark")}>
-                                {isDark === "dark" ? (
-                                    <img src={Sun} alt="sun img" />
-                                ) : (
-                                    <img src={Moon} alt="moon img" />
-                                )}
-                            </span>
-                        </div>
+                        <Dark />
                     </li>
                 </ul>
             </nav>
