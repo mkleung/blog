@@ -21,7 +21,7 @@ const Header = ({ siteTitle, navLocation }) => {
 
                     <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
                         <div
-                            className="absolute top-0 right-0 px-8 py-8"
+                            className="absolute top-0 right-0 px-4 py-4"
                             onClick={() => setIsNavOpen(false)}>
                             <svg
                                 className="h-8 w-8 text-gray-600"

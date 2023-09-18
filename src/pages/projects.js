@@ -18,7 +18,7 @@ const ProjectsPage = () => {
               <p className=" title font-bold text-xl mb-2">100 Days of CSS challenge</p>
               <p className="">
                 I have completed the 100 days of css challenge as a creative learning process to polish my front end skills.
-                <br /><br /><a href="https://codepen.io/mkleung" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" target="_blank">View Portfolio</a>
+                <br /><br /><a href="https://codepen.io/mkleung" className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-full" target="_blank">View Portfolio</a>
               </p>
             </div>
             <div className="px-6 pt-4 pb-2">
@@ -34,7 +34,7 @@ const ProjectsPage = () => {
               <p className=" title font-bold text-xl mb-2">JW Foods</p>
               <p className="">
                 JW foods is a sports nutrition company based in toronto
-                <br /><br /><a href="" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full" target="_blank">View Website</a>
+                <br /><br /><a href="" className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-full" target="_blank">View Website</a>
               </p>
             </div>
             <div className="px-6 pt-4 pb-2">

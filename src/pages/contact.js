@@ -2,6 +2,7 @@ import * as React from "react"
 
 import Layout from "../components/layout"
 import Jumbotron from "../components/jumbotron"
+import HeroContact from "../components/herocontact"
 
 const ContactPage = () => {
     
@@ -12,8 +13,11 @@ const ContactPage = () => {
 
                 <Jumbotron />
 
-                <h1 className="mb-5">Contact me</h1>
-                <form className="w-full">
+                <h2 className="font-bold mb-5">Contact me</h2>
+
+                <HeroContact />
+                            
+                {/* <form className="w-full" method="post" action="https://getform.io/f/9f0d6cf4-0766-40ea-86f7-61cd78c4d7c0">
                     <div className="flex flex-wrap -mx-3">
                         <div className="w-full md:w-1/2 px-3  md:mb-0">
                             <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
@@ -40,20 +44,20 @@ const ContactPage = () => {
                                 Message
                             </label>
                             <textarea className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-password" type="text" rows="5" placeholder="" ></textarea >
-
+                            <input type="hidden" name="_gotcha" />
                         </div>
                     </div>
 
                     <div className="md:flex md:items-center">
                         <div className="md:w-1/3"></div>
                         <div className="md:w-2/3">
-                            <button className="shadow bg-teal-400 hover:bg-teal-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
+                            <button className="shadow bg-teal-400 hover:bg-teal-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="submit">
                                 Send
                             </button>
                         </div>
                     </div>
 
-                </form>
+                </form> */}
 
             </div>
 
