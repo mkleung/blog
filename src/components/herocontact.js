@@ -52,6 +52,7 @@ const ContactForm = () => {
             onSubmit={handleSubmit}
             method="POST"
         >
+            <h2 className="font-bold mb-5">Contact me</h2>
             <div className="pt-0 mb-3">
                 <input
                     type="text"

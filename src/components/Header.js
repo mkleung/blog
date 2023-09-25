@@ -10,7 +10,8 @@ const Header = ({ siteTitle, navLocation }) => {
 
     return (
         <div className=" max-w-screen-xl flex items-center justify-between  py-4  mx-auto p-4">
-            <a href="/"><h1 className="text-2xl font-semibold	">Michael Leung</h1></a>
+            <Link to="/"><h1 className="text-2xl font-semibold	">Michael Leung</h1></Link>
+
             <nav>
                 <section className="MOBILE-MENU flex lg:hidden">
                     <div className="HAMBURGER-ICON space-y-2" onClick={() => setIsNavOpen((prev) => !prev)} >
