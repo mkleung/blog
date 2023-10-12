@@ -46,6 +46,7 @@ const AboutPage = () => {
             <li>Sport    : Soccer </li>
             <li>Drink    : Mango Lassi</li>
             <li>Movie    : RRR </li>
+            <li>Show     : Nathan for you</li>
           </ul>
         </p>
 
