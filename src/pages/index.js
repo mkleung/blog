@@ -9,7 +9,7 @@ const IndexPage = () => {
      
         <div className="container max-w-2xl mx-auto  grid grid-cols-3 p-4 gap-4 mt-28">
           <div className="col-span-2	 ">
-            <h1 className="mainTitle">Hello 👋 I'm Michael</h1>
+            <h1 className="mainTitle">Hi 👋 I'm Michael Leung</h1>
             <h2 className="mt-1">Welcome to my website</h2>
             <p className="mb-10 mt-10 text-gray-700">
               I'm a software developer who is passionate about building <span className="highlight">amazing websites.</span>
