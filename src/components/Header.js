@@ -2,6 +2,7 @@ import * as React from "react"
 import { useState } from "react"
 import { Link } from "gatsby"
 import Dark from "./dark"
+import Language from "./language"
 
 const Header = ({ siteTitle, navLocation }) => {
 
@@ -60,6 +61,9 @@ const Header = ({ siteTitle, navLocation }) => {
                     </li>
                     <li>
                         <Link to="/contact" activeClassName="active" className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 ">Contact</Link>
+                    </li>
+                    <li>
+                    {/* <Language /> */}
                     </li>
                     <li className="darkCheckContainer">
                         <Dark />

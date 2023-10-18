@@ -12,7 +12,7 @@ const IndexPage = () => {
             <h1 className="mainTitle">Hello 👋 I'm Michael</h1>
             <h2 className="mt-1">Welcome to my website</h2>
             <p className="mb-10 mt-10 text-gray-700">
-              I'm a software developer that moulds ideas into useful amazing websites. I also help businesses built their <span className="highlight">online presence.</span>
+              I'm a software developer who is passionate about building <span className="highlight">amazing websites.</span>
             </p>
             <Link to="/about" className=" bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-full">About Me</Link>
           </div>
