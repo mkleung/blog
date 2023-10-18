@@ -23,9 +23,10 @@ const AboutPage = () => {
             </p>
           </div>
           <div className="flex justify-center items-right		">
-            <StaticImage src="../images/about.JPG" placeholder="blurred"
+              <StaticImage src="../images/mike2.JPG" placeholder="blurred"
               layout="fixed"
               height={150}
+              width={150}
               className="	mt-5 mb-2" alt="developer" />
           </div>
         </div>
