@@ -11,7 +11,7 @@ const Header = ({ siteTitle, navLocation }) => {
 
     return (
         <div className=" max-w-screen-xl flex items-center justify-between  py-4  mx-auto p-4">
-            <Link to="/"><h1 className="text-2xl font-semibold	">Michael Leung</h1></Link>
+            <Link to="/"><h1 className="text-2xl font-semibold	"></h1></Link>
 
             <nav>
                 <section className="MOBILE-MENU flex lg:hidden">
@@ -54,6 +54,9 @@ const Header = ({ siteTitle, navLocation }) => {
 
                 <ul className="navbar hidden font-medium space-x-8 lg:flex">
                     <li>
+                        <Link to="/" activeClassName="active" className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 ">Home</Link>
+                    </li>
+                    <li>
                         <Link to="/about" activeClassName="active" className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 ">About</Link>
                     </li>
                     <li>
@@ -62,9 +65,9 @@ const Header = ({ siteTitle, navLocation }) => {
                     <li>
                         <Link to="/contact" activeClassName="active" className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 ">Contact</Link>
                     </li>
-                    <li>
-                    {/* <Language /> */}
-                    </li>
+                    {/* <li>
+                    <Language />
+                    </li> */}
                     <li className="darkCheckContainer">
                         <Dark />
                     </li>

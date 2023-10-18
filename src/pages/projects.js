@@ -8,7 +8,8 @@ const ProjectsPage = () => {
   return (
     <Layout>
       <div className="container max-w-2xl mx-auto p-4 py-8">
-        <Jumbotron />
+        {/* <Jumbotron /> */}
+        <h3 className=" mb-5 mainTitle">Projects</h3>
 
         <div className="container m-auto grid grid-cols-1 md:grid-cols-2 gap-4">
 

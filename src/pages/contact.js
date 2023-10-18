@@ -10,7 +10,8 @@ const ContactPage = () => {
         <Layout>
 
             <div className="container max-w-2xl mx-auto p-4 py-8">
-                <Jumbotron />
+                {/* <Jumbotron /> */}
+                <h3 className=" mb-5 mainTitle">Contact me</h3>
                 <HeroContact />
             </div>
 
