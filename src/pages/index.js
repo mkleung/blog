@@ -19,7 +19,9 @@ const IndexPage = () => {
             <p className="mb-10 mt-10 text-gray-700">
               <Trans>Im a software developer</Trans> <span className="highlight"><Trans>amazing websites</Trans>.</span>
             </p>
-            <Link to="/about" className=" bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-full"><Trans>about me</Trans></Link>
+            <Link to="/about" className=" bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-full">
+              <Trans>about me</Trans>
+            </Link>
           </div>
           <div className="	 ">
             <StaticImage src="../images/mike.JPG" placeholder="blurred"

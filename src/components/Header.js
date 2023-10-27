@@ -45,13 +45,13 @@ const Header = ({ siteTitle, navLocation }) => {
                         </div>
                         <ul className=" flex flex-col items-center justify-between min-h-[250px]">
                             <li className="border-b border-gray-400 my-8 uppercase">
-                                <Link to="/about">About</Link>
+                                <Link to="/about"><Trans>about</Trans></Link>
                             </li>
                             <li className="border-b border-gray-400 my-8 uppercase">
-                                <Link to="/projects">Projects</Link>
+                                <Link to="/projects"><Trans>projects</Trans></Link>
                             </li>
                             <li className="border-b border-gray-400 my-8 uppercase">
-                                <Link to="/contact">Contact</Link>
+                                <Link to="/contact"><Trans>contact</Trans></Link>
                             </li>
                         </ul>
                     </div>
@@ -78,29 +78,6 @@ const Header = ({ siteTitle, navLocation }) => {
                             <Trans>contact</Trans>
                         </Link>
                     </li>
-
-
-                    {/* {languages.map((lng) => (
-                        <li key={lng}>
-                            <Link className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 " to={originalPath} language={lng}>
-                                {lng}
-                            </Link>
-                        </li>
-                    ))} */}
-                    {/* 
-                    {languages.map((lng) => (
-                        <li key={lng}>
-                            <a
-                                href="#"
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    changeLanguage(lng);
-                                }}>
-                                {lng}
-                            </a>
-                        </li>
-                    ))}  */}
-
 
                     {context.language == "fr" ?
                         <li key="en">
@@ -161,7 +138,6 @@ const Header = ({ siteTitle, navLocation }) => {
     )
 }
 export default Header
-
 
 export const query = graphql`
   query($language: String!) {

@@ -1,7 +1,8 @@
 import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 import Layout from "../components/layout"
-import Jumbotron from "../components/jumbotron"
+import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
+import { graphql } from 'gatsby';
 
 
 const ProjectsPage = () => {
@@ -9,7 +10,7 @@ const ProjectsPage = () => {
     <Layout>
       <div className="container max-w-2xl mx-auto p-4 py-8">
         {/* <Jumbotron /> */}
-        <h3 className=" mb-5 mainTitle">Projects</h3>
+        <h3 className=" mb-5 mainTitle"><Trans>projects</Trans></h3>
 
         <div className="container m-auto grid grid-cols-1 md:grid-cols-2 gap-4">
 
@@ -55,3 +56,17 @@ const ProjectsPage = () => {
 export default ProjectsPage
 
 export const Head = () => <title>Projects </title>
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

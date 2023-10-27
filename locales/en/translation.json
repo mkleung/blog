@@ -11,8 +11,9 @@
     "projects":"Projects",
     "contact":"Contact",
 
-
-    "Contact me": "Contact me",
+    "test" : "about",
+    "contact me": "Contact me",
+    "send": "Send",
 
     "Made using Gatsby":"Made using Gatsby and hosted on github"
 }

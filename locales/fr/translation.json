@@ -10,8 +10,9 @@
     "projects":"Projets",
     "contact":"Me Joindre",
 
-
-    "Contact me": "Contactez moi",
+    "test" : "sur",
+    "contact me": "Contactez moi",
+    "send": "Envoyez",
 
     "Made using Gatsby":"Réalisé avec Gatsby et hébergé sur github"
 }

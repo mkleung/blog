@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
+import { graphql } from 'gatsby';
 
 const FORM_ENDPOINT = " https://public.herotofu.com/v1/ee330890-566d-11ee-844c-3ff971b55902";
 
@@ -83,7 +85,7 @@ const ContactForm = () => {
                     className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-full"
                     type="submit"
                 >
-                    Send a message
+                    <Trans>send</Trans>
                 </button>
             </div>
         </form>
@@ -91,3 +93,17 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
