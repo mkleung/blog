@@ -7,7 +7,7 @@ import { graphql } from 'gatsby';
 
 const IndexPage = () => {
   const { t } = useTranslation();
-  
+
   return (
     <Layout>
 
@@ -28,6 +28,8 @@ const IndexPage = () => {
               className="mx-auto rounded-full mt-5" alt="developer" />
           </div>
         </div>
+
+        
       
     </Layout>
   )

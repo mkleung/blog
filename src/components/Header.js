@@ -1,15 +1,20 @@
 import * as React from "react"
 import { useState } from "react"
-// import { Link } from "gatsby"
 import Dark from "./dark"
 import { graphql } from 'gatsby';
-import { Link, useI18next } from 'gatsby-plugin-react-i18next';
-import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
+import { Link, Trans, useTranslation, useI18next, I18nextContext } from 'gatsby-plugin-react-i18next';
+
 
 const Header = ({ siteTitle, navLocation }) => {
 
+
     const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
-    const { languages, originalPath } = useI18next();
+    // const { languages, originalPath } = useI18next();
+    // const { t } = useTranslation();
+
+    const { languages, changeLanguage } = useI18next();
+    const context = React.useContext(I18nextContext);
+
 
     return (
         <div className=" max-w-screen-xl flex items-center justify-between  py-4  mx-auto p-4">
@@ -70,18 +75,58 @@ const Header = ({ siteTitle, navLocation }) => {
                     </li>
                     <li>
                         <Link to="/contact" activeClassName="active" className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 ">
-                        <Trans>contact</Trans>
+                            <Trans>contact</Trans>
                         </Link>
                     </li>
 
-                    {languages.map((lng) => (
 
+                    {/* {languages.map((lng) => (
                         <li key={lng}>
                             <Link className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 " to={originalPath} language={lng}>
                                 {lng}
                             </Link>
                         </li>
-                    ))}
+                    ))} */}
+                    {/* 
+                    {languages.map((lng) => (
+                        <li key={lng}>
+                            <a
+                                href="#"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    changeLanguage(lng);
+                                }}>
+                                {lng}
+                            </a>
+                        </li>
+                    ))}  */}
+
+
+                    {context.language == "fr" ?
+                        <li key="en">
+                            <a
+                                className="language-switcher"
+                                href="#"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    changeLanguage("en");
+                                }}>
+                                EN
+                            </a>
+                        </li>
+                        :
+                        <li key="en">
+                            <a
+                                className="language-switcher"
+                                href="#"
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    changeLanguage("fr");
+                                }}>
+                                FR
+                            </a>
+                        </li>
+                    }
 
                     <li className="darkCheckContainer">
                         <Dark />
@@ -90,6 +135,8 @@ const Header = ({ siteTitle, navLocation }) => {
 
 
                 </ul>
+
+
             </nav>
             <style>{`
       .hideMenuNav {
@@ -114,3 +161,18 @@ const Header = ({ siteTitle, navLocation }) => {
     )
 }
 export default Header
+
+
+export const query = graphql`
+  query($language: String!) {
+    locales: allLocale(filter: {language: {eq: $language}}) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;

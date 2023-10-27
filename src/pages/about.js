@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import Jumbotron from "../components/jumbotron"
-
+import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 
 const AboutPage = () => {
   return (
@@ -13,7 +13,7 @@ const AboutPage = () => {
       <div className="container max-w-2xl mx-auto p-4 py-8">
 
         {/* <Jumbotron /> */}
-        <h3 className=" mb-5 mainTitle">About me</h3>
+        <h3 className=" mb-5 mainTitle"><Trans>about me</Trans></h3>
         <div class="grid grid-cols-2 gap-4">
           <div>
             <p className="py-4 text-gray-700">

@@ -31,33 +31,3 @@
 .dark .project p, .dark .project span {
     color:black;
 }
-
-/* 
-.dark .bar {
-  background-color: #f39c12 ;
-}
-
-    .dark .highlight {
-    white-space: nowrap;
-    background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 50%, #f39c12 0);
-  }
-  
-  .darkCheckContainer{
-    margin-left: 0.5rem!important;
-    padding-right: 1rem!important;
-  }
-  
-  #darkCheck {
-    visibility: hidden;
-  }
-  
-  #darkCheck + label:after {
-    content: "🌙";
-    cursor:pointer;
-  }
-  
-  #darkCheck:checked + label:after {
-    content: "☀️";
-    cursor:pointer;
-  }
-   */

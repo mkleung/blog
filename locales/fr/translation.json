@@ -5,10 +5,13 @@
     "amazing websites":"des sites web incroyables",
     "about me":"À Propos",
 
-    "home" : "maison",
-    "about": "à propos",
-    "projects":"projets",
-    "contact":"me joindre",
+    "home" : "Maison",
+    "about": "À Propos",
+    "projects":"Projets",
+    "contact":"Me Joindre",
+
+
+    "Contact me": "Contactez moi",
 
     "Made using Gatsby":"Réalisé avec Gatsby et hébergé sur github"
 }

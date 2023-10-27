@@ -6,10 +6,13 @@
     "about me":"About Me",
 
 
-    "home" : "home",
-    "about": "about",
-    "projects":"projects",
-    "contact":"contact",
+    "home" : "Home",
+    "about": "About",
+    "projects":"Projects",
+    "contact":"Contact",
+
+
+    "Contact me": "Contact me",
 
     "Made using Gatsby":"Made using Gatsby and hosted on github"
 }
