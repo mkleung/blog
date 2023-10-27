@@ -1,5 +1,15 @@
 {
-    "Welcome to my Gatsby site!": "Welcome to my Gatsby site!",
-    "My name is Shanika": "My name is Shanika”,
-    "My profession is SSE": "My profession is SSE"
+    "Hi I'm Michael Leung":"Hi 👋 I'm Michael Leung",
+    "Welcome to my website": "Welcome to my website",
+    "Im a software developer": "I'm a software developer who is passionate about building",
+    "amazing websites":"amazing websites",
+    "about me":"About Me",
+
+
+    "home" : "home",
+    "about": "about",
+    "projects":"projects",
+    "contact":"contact",
+
+    "Made using Gatsby":"Made using Gatsby and hosted on github"
 }

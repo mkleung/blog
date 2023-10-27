@@ -1,18 +1,19 @@
 import * as React from "react"
 import { useState } from "react"
-import { Link } from "gatsby"
+// import { Link } from "gatsby"
 import Dark from "./dark"
-import Language from "./language"
+import { graphql } from 'gatsby';
+import { Link, useI18next } from 'gatsby-plugin-react-i18next';
+import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 
 const Header = ({ siteTitle, navLocation }) => {
 
-
     const [isNavOpen, setIsNavOpen] = useState(false); // initiate isNavOpen state with false
+    const { languages, originalPath } = useI18next();
 
     return (
         <div className=" max-w-screen-xl flex items-center justify-between  py-4  mx-auto p-4">
             <Link to="/"><h1 className="text-2xl font-semibold	"></h1></Link>
-
             <nav>
                 <section className="MOBILE-MENU flex lg:hidden">
                     <div className="HAMBURGER-ICON space-y-2" onClick={() => setIsNavOpen((prev) => !prev)} >
@@ -20,7 +21,6 @@ const Header = ({ siteTitle, navLocation }) => {
                         <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
                         <span className="block h-0.5 w-8 animate-pulse bg-gray-600"></span>
                     </div>
-
                     <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}>
                         <div
                             className="absolute top-0 right-0 px-4 py-4"
@@ -48,33 +48,47 @@ const Header = ({ siteTitle, navLocation }) => {
                             <li className="border-b border-gray-400 my-8 uppercase">
                                 <Link to="/contact">Contact</Link>
                             </li>
-                          
                         </ul>
                     </div>
                 </section>
 
                 <ul className="navbar hidden font-medium space-x-8 lg:flex">
                     <li>
-                        <Link to="/" activeClassName="active" className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 ">Home</Link>
+                        <Link to="/" activeClassName="active" className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 ">
+                            <Trans>home</Trans>
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/about" activeClassName="active" className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 ">About</Link>
+                        <Link to="/about" activeClassName="active" className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 ">
+                            <Trans>about</Trans>
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/projects" activeClassName="active" className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 ">Projects</Link>
+                        <Link to="/projects" activeClassName="active" className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 ">
+                            <Trans>projects</Trans>
+                        </Link>
                     </li>
                     <li>
-                        <Link to="/contact" activeClassName="active" className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 ">Contact</Link>
+                        <Link to="/contact" activeClassName="active" className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 ">
+                        <Trans>contact</Trans>
+                        </Link>
                     </li>
 
-                    <li>
-                        <Link to="/test" activeClassName="active" className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 ">Test</Link>
-                    </li>
-    
-           
+                    {languages.map((lng) => (
+
+                        <li key={lng}>
+                            <Link className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 " to={originalPath} language={lng}>
+                                {lng}
+                            </Link>
+                        </li>
+                    ))}
+
                     <li className="darkCheckContainer">
                         <Dark />
                     </li>
+
+
+
                 </ul>
             </nav>
             <style>{`
@@ -99,5 +113,4 @@ const Header = ({ siteTitle, navLocation }) => {
         </div>
     )
 }
-
 export default Header
