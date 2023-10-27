@@ -1,11 +1,9 @@
 import * as React from "react"
-import { StaticImage } from "gatsby-plugin-image"
-import { Link } from "gatsby"
 import Layout from "../components/layout"
-import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import { graphql } from 'gatsby';
+import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 
-const IndexPage = () => {
+const TestPage = () => {
   const { t } = useTranslation();
   return (
     <Layout>
@@ -22,13 +20,15 @@ const IndexPage = () => {
         </div>
       </div>
 
-        
- 
+
+
     </Layout>
   )
 }
 
-export default IndexPage
+export default TestPage
+
+export const Head = () => <title>Michael Leung - Test</title>
 
 export const query = graphql`
   query($language: String!) {

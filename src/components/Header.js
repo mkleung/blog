@@ -48,6 +48,7 @@ const Header = ({ siteTitle, navLocation }) => {
                             <li className="border-b border-gray-400 my-8 uppercase">
                                 <Link to="/contact">Contact</Link>
                             </li>
+                          
                         </ul>
                     </div>
                 </section>
@@ -65,9 +66,12 @@ const Header = ({ siteTitle, navLocation }) => {
                     <li>
                         <Link to="/contact" activeClassName="active" className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 ">Contact</Link>
                     </li>
-                    {/* <li>
-                    <Language />
-                    </li> */}
+
+                    <li>
+                        <Link to="/test" activeClassName="active" className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 ">Test</Link>
+                    </li>
+    
+           
                     <li className="darkCheckContainer">
                         <Dark />
                     </li>

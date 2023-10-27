@@ -16,21 +16,21 @@ npm run deploy
 
 # Packages to install
 
-TailwindCSS
+### TailwindCSS
 - [Tailwind](https://tailwindcss.com/docs/guides/gatsby)
 
-Gatsby Image 
+### Gatsby Image 
 (NOTE: use photo.JPG - capitalize the JPG or will not show up on github pages and use
 pathPrefix: "/", in gatsby-config.js)
 
-Font loader
+### Font loader
 -  npm install gatsby-omni-font-loader react-helmet
 
-Dark mode
+### Dark mode
 -  npm i gatsby-plugin-dark-mode --legacy-peer-deps
 or
 
-downgrade react
+### downgrade react
 
 "dependencies": {
    ...
@@ -39,14 +39,18 @@ downgrade react
     ...
     }
 
-Favicon
+### Favicon
 npm install gatsby-plugin-manifest
 
 
-Styled components
+### Styled components
 
 npm install gatsby-plugin-styled-components styled-components babel-plugin-styled-components
 
-Cleanup
+### Cleanup
 npm cache clean --force
+
+### Multilingual
+
+https://lokalise.com/blog/gatsby-i18n/
 
