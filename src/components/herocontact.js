@@ -57,7 +57,7 @@ const ContactForm = () => {
             <div className="pt-0 mb-3">
                 <input
                     type="text"
-                    placeholder="Your name"
+                    placeholder="Name"
                     name="name"
                     className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                     required
@@ -66,7 +66,7 @@ const ContactForm = () => {
             <div className="pt-0 mb-3">
                 <input
                     type="email"
-                    placeholder="Your email"
+                    placeholder="Email"
                     name="email"
                     className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                     required
@@ -74,7 +74,7 @@ const ContactForm = () => {
             </div>
             <div className="pt-0 mb-3">
                 <textarea
-                    placeholder="Your message"
+                    placeholder="Message"
                     name="message"
                     className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white"
                     required

@@ -15,5 +15,28 @@
     "contact me": "Contact me",
     "send": "Send",
 
+    "about1":"Hello I am Michael Leung. I'm a software developer based in Ottawa, Canada. This is a place where I share my projects, hobbies, learnings and thoughts to the world.",
+    "about2":"Quick Facts",
+    "about3":"I have a bachelors degree in science from Carleton University",
+    "about4":"I was born and grew up on a tiny island south of India called Mauritius",
+    "about5":"I am obsessed with all things technology",
+
+    "about6":"Favorites",
+    "about7":"Dish",
+    "about8":"Sport",
+    "about9":"Drink",
+    "about10":"Movie",
+    "about11":"Show",
+
+    "about12":"Bucketlist",
+    "about13":"Bikepacking and camping in the wilderness",
+    "about14":"See the northern lights",
+    "about15":"Visiting the seven moderns of the world like the Taj Mahal",
+
+    "about16":"Software I love (that are also free)",
+    "about17":"Things I am familiar with",
+
+    "view":"View",
+
     "Made using Gatsby":"Made using Gatsby and hosted on github"
 }

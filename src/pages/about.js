@@ -18,8 +18,7 @@ const AboutPage = () => {
         <div class="grid grid-cols-2 gap-4">
           <div>
             <p className="py-4 text-gray-700">
-              Hello I am Michael Leung. I'm a software developer based in Ottawa, Canada. This is a place where
-              I share my projects, hobbies, learnings and thoughts to the world.
+              <Trans>about1</Trans>
             </p>
           </div>
           <div className="flex justify-center items-right		">
@@ -31,36 +30,36 @@ const AboutPage = () => {
           </div>
         </div>
 
-        <h2 className="font-bold	">Quick Facts</h2>
+        <h2 className="font-bold	"><Trans>about2</Trans></h2>
         <p className="py-4 text-gray-700 px-5">
           <ul className="list-disc">
-            <li>I have a bachelors degree in science from Carleton University</li>
-            <li>I was born and grew up on a tiny island south of India called Mauritius</li>
-            <li>I am obsessed with all things technology</li>
+            <li><Trans>about3</Trans></li>
+            <li><Trans>about4</Trans></li>
+            <li><Trans>about5</Trans></li>
           </ul>
         </p>
 
-        <h2 className="font-bold	">Favorites</h2>
+        <h2 className="font-bold	"><Trans>about6</Trans></h2>
         <p className="py-4 text-gray-700 px-5">
           <ul className="list-disc">
-            <li>Dish     : Biryani 🍛</li>
-            <li>Sport    : Soccer </li>
-            <li>Drink    : Mango Lassi</li>
-            <li>Movie    : RRR </li>
-            <li>Show     : Nathan for you</li>
+            <li><Trans>about7</Trans>     : Biryani 🍛</li>
+            <li><Trans>about8</Trans>    : Soccer </li>
+            <li><Trans>about9</Trans>    : Mango Lassi</li>
+            <li><Trans>about10</Trans>    : RRR </li>
+            <li><Trans>about11</Trans>     : Nathan for you</li>
           </ul>
         </p>
 
-        <h2 className="font-bold	">Bucketlist</h2>
+        <h2 className="font-bold	"><Trans>about12</Trans></h2>
         <p className="py-4 text-gray-700 px-5">
           <ul className="list-disc">
-            <li>Bikepacking and camping in the wilderness</li>
-            <li>See the northern lights</li>
-            <li>Visiting the seven moderns of the world like the Taj Mahal</li>
+            <li><Trans>about13</Trans></li>
+            <li><Trans>about14</Trans></li>
+            <li><Trans>about15</Trans></li>
           </ul>
         </p>
 
-        <h2 className="font-bold	">Software I love (that are also free)</h2>
+        <h2 className="font-bold	"><Trans>about16</Trans></h2>
         <p className="py-4 text-gray-700 px-5">
           <ul className="list-disc">
             <li><span className="font-bold">Coding: </span> <a target="_blank" href="https://code.visualstudio.com/"  className="text-blue-500 hover:underline mx-2">Visual Studio Code</a></li>
@@ -77,7 +76,7 @@ const AboutPage = () => {
       </div>
 
       <div className="container max-w-2xl mx-auto  p-4">
-          <h2>Things I am familiar with</h2>
+          <h2><Trans>about17</Trans></h2>
         </div>
 
         <div className="progressbar container max-w-2xl mx-auto py-5 skills grid grid-cols-2 p-4 gap-8">
