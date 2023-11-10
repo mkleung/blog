@@ -54,3 +54,6 @@ npm cache clean --force
 
 https://lokalise.com/blog/gatsby-i18n/
 
+### React Spring for dark mode
+
+https://jfelix.info/blog/using-react-spring-to-animate-svg-icons-dark-mode-toggle

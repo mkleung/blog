@@ -12,9 +12,29 @@ const ProjectsPage = () => {
         {/* <Jumbotron /> */}
         <h3 className=" mb-5 mainTitle"><Trans>projects</Trans></h3>
 
-        <div className="container m-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="container m-auto grid grid-cols-1 ">
 
-          <div className="max-w-sm rounded overflow-hidden shadow-lg project">
+
+            {/* REACT  */}
+            <div className="block max-w-xl p-2 transition-colors duration-500 ease-in-out bg-white border border-gray-200 rounded-lg shadow hover:bg-teal-100 dark:bg-teal-800 dark:border-gray-700 dark:hover:bg-gray-700 mb-5">
+            {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"> */}
+            <div className="px-6 py-4">
+              <p className=" title font-bold text-xl mb-2">100 Days of ReactJS challenge</p>
+              <p className="">
+                I have completed the 100 days of learning React
+                <br /><br /><a href="https://github.com/mkleung/100daysofReact" className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-full" target="_blank">
+                  <Trans>view</Trans></a>
+              </p>
+            </div>
+            <div className="px-6 pt-4 pb-2">
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">#react</span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#redux</span>
+              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#html</span>
+            </div>
+          </div>
+
+          {/* CSS  */}
+          <div className="block max-w-xl p-2 transition-colors duration-500 ease-in-out bg-white border border-gray-200 rounded-lg shadow hover:bg-teal-100 dark:bg-teal-800 dark:border-gray-700 dark:hover:bg-gray-700 mb-5">
             {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"> */}
             <div className="px-6 py-4">
               <p className=" title font-bold text-xl mb-2">100 Days of CSS challenge</p>
@@ -31,23 +51,6 @@ const ProjectsPage = () => {
             </div>
           </div>
 
-          <div className="max-w-sm rounded overflow-hidden shadow-lg project">
-            {/* <img class="w-full" src="/img/card-top.jpg" alt="Sunset in the mountains"> */}
-            <div className="px-6 py-4">
-              <p className=" title font-bold text-xl mb-2">JW Foods</p>
-              <p className="">
-                This full stack web application is a project I did to learn tailwindcss, flask and mongodb
-                <br /><br /><a href="https://mkleung.github.io/jwfoods/" className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-full" target="_blank">
-                <Trans>view</Trans></a>
-              </p>
-            </div>
-            <div className="px-6 pt-4 pb-2">
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold mr-2 mb-2">#python</span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#flask</span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#nosql</span>
-              <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold  mr-2 mb-2">#React</span>
-            </div>
-          </div>
 
         </div>
       </div>

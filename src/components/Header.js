@@ -48,6 +48,9 @@ const Header = ({ siteTitle, navLocation }) => {
                                 <Link to="/about"><Trans>about</Trans></Link>
                             </li>
                             <li className="border-b border-gray-400 my-8 uppercase">
+                                <Link to="/portfolio"><Trans>portfolio</Trans></Link>
+                            </li>
+                            <li className="border-b border-gray-400 my-8 uppercase">
                                 <Link to="/projects"><Trans>projects</Trans></Link>
                             </li>
                             <li className="border-b border-gray-400 my-8 uppercase">
@@ -59,22 +62,27 @@ const Header = ({ siteTitle, navLocation }) => {
 
                 <ul className="navbar hidden font-medium space-x-8 lg:flex">
                     <li>
-                        <Link to="/" activeClassName="active" className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 ">
+                        <Link to="/" activeClassName="active" className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 transition-colors duration-300 ease-in-out">
                             <Trans>home</Trans>
                         </Link>
                     </li>
                     <li>
-                        <Link to="/about" activeClassName="active" className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 ">
+                        <Link to="/about" activeClassName="active" className="block  py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 transition-colors duration-300 ease-in-out">
                             <Trans>about</Trans>
                         </Link>
                     </li>
                     <li>
-                        <Link to="/projects" activeClassName="active" className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 ">
+                        <Link to="/portfolio" activeClassName="active" className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 transition-colors duration-300 ease-in-out">
+                            <Trans>portfolio</Trans>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link to="/projects" activeClassName="active" className="block  py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 transition-colors duration-300 ease-in-out">
                             <Trans>projects</Trans>
                         </Link>
                     </li>
                     <li>
-                        <Link to="/contact" activeClassName="active" className="block py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 ">
+                        <Link to="/contact" activeClassName="active" className="block  py-2  text-gray-900  md:p-0 hover:text-teal-500 transition-colors duration-300 ease-in-out">
                             <Trans>contact</Trans>
                         </Link>
                     </li>
@@ -94,7 +102,7 @@ const Header = ({ siteTitle, navLocation }) => {
                         :
                         <li key="en">
                             <a
-                                className="language-switcher"
+                                className="language-switcher "
                                 href="#"
                                 onClick={(e) => {
                                     e.preventDefault();

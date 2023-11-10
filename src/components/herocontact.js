@@ -82,7 +82,7 @@ const ContactForm = () => {
             </div>
             <div className="pt-0 pt-3 mb-3">
                 <button
-                    className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-full"
+                    className="transition-colors duration-300 ease-in-out bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded-full"
                     type="submit"
                 >
                     <Trans>send</Trans>
