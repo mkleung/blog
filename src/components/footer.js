@@ -9,7 +9,7 @@ function Footer() {
 
                 <div className="container mx-auto">
                 <div className="text-center mb-3">
-                    <a target="_blank" href="https://github.com/mkleung" className="text-teal-500 hover:underline mx-3">Github</a>
+                    <a target="_blank" href="https://github.com/mkleung" className="text-teal-500 dark:text-red hover:underline mx-3">Github</a>
                     <a target="_blank" href="https://www.instagram.com/morningmike/" className="text-teal-500 hover:underline mx-3">Instagram</a>
                     <a target="_blank" href="https://twitter.com/mikelottawa" className="text-teal-500 hover:underline mx-3">Twitter</a>
                 </div>
@@ -19,9 +19,6 @@ function Footer() {
                     </p>
                 </div>
                 </div>
-
-
-               
             </div>
         </footer>
 

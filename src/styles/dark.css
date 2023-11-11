@@ -15,19 +15,20 @@
     color: #fff;
 }
 
-.dark .bar {
-    background-color: #f39c12;
-}
-
-.dark .highlight {
-    white-space: nowrap;
-    background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 50%, #f39c12 0);
-}
 
 .dark .project {
     background-color: #FFF;
 }
 
-.dark .project p, .dark .project span {
+.dark .tag {
     color:black;
+}
+
+.dark .language-switcher {
+    background-color: white;
+    color: black!important;
+}
+
+.dark .language-switcher:hover {
+    background-color: rgb(94 234 212);
 }
