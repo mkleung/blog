@@ -51,7 +51,7 @@ const Header = ({ siteTitle, navLocation }) => {
                                 <Link to="/portfolio"><Trans>portfolio</Trans></Link>
                             </li>
                             <li className="border-b border-gray-400 my-8 uppercase">
-                                <Link to="/projects"><Trans>projects</Trans></Link>
+                                <Link to="/learn"><Trans>learn</Trans></Link>
                             </li>
                             <li className="border-b border-gray-400 my-8 uppercase">
                                 <Link to="/contact"><Trans>contact</Trans></Link>
@@ -77,8 +77,8 @@ const Header = ({ siteTitle, navLocation }) => {
                         </Link>
                     </li>
                     <li>
-                        <Link to="/projects" activeClassName="active" className="block  py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 transition-colors duration-300 ease-in-out">
-                            <Trans>projects</Trans>
+                        <Link to="/learn" activeClassName="active" className="block  py-2 pl-3 pr-4 text-gray-900  md:p-0 hover:text-teal-500 transition-colors duration-300 ease-in-out">
+                            <Trans>learn</Trans>
                         </Link>
                     </li>
                     <li>
