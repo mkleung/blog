@@ -5,8 +5,7 @@ function Footer() {
     return (
         <footer className="">
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
-                <hr className="my-6 border-gray-100 sm:mx-auto dark:border-gray-200 lg:my-8" />
-
+ 
                 <div className="container mx-auto">
                 <div className="text-center mb-3">
                     <a target="_blank" href="https://github.com/mkleung" className="text-teal-500 dark:text-red hover:underline mx-3">Github</a>
