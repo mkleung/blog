@@ -1,10 +1,10 @@
-# Create gatsby site
+# Run gatsby site
 
-npm init gatsby
+> npm install
 
-cd my-gatsby-site
+> gatsby develop
 
-npm run develop
+Then go to http://localhost:8000/  
 
 # Deploy to github pages
 

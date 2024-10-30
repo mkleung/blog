@@ -17,11 +17,10 @@
     "contact me": "Contact me",
     "send": "Send",
 
-    "about1":"Hello I am Michael Leung. I'm a software developer based in Ottawa, Canada. This is a place where I share my projects, hobbies, learnings and thoughts to the world.",
-    "about2":"Quick Facts",
-    "about3":"I have a bachelors degree in science from Carleton University",
-    "about4":"I was born and grew up on a tiny island south of India called Mauritius",
-    "about5":"I am obsessed with all things technology",
+    "about1":"Hello! I'm Michael Leung, a passionate software developer residing in Ottawa, Canada. This space is where I showcase my projects, share my hobbies, and reflect on my learnings and thoughts. ",
+    "about2":"I earned my bachelor's degree in science from Carleton University and grew up on a charming island called Mauritius. ",
+    "about3": "My love for technology drives me every day, and when I'm not coding, I enjoy indulging in biryani 🍛, watching my favorite football ⚽ and cricket team play, and taking",
+    "about4": "bird pictures",
 
     "about6":"Favorites",
     "about7":"Dish",
@@ -35,7 +34,7 @@
     "about14":"See the northern lights",
     "about15":"Visiting the seven moderns of the world like the Taj Mahal",
 
-    "about16":"Software I love (that are also free)",
+    "about16":"Software I love",
     "about17":"Things I am familiar with",
 
     "view":"View",
